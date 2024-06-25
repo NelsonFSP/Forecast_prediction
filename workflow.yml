@@ -1,0 +1,19 @@
+# Declaração de nome do meu workflow
+name: Continuos integration
+
+# Condição que vai triggar meu workflow
+on:
+  push:
+    branches:
+      - 'develop'
+
+jobs:
+  # Aonde meu step vai rodar
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Create Pull Request
+        uses: create-pull-request@v6

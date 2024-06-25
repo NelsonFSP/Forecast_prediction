@@ -1,0 +1,9 @@
+# Workflow basico de CI para testes e aprendizado
+
+name: Forecast_prediction_ci
+
+# Controles para rodar o workflow
+on:
+  # Disparar um pull request para branch main
+  pull_request:
+    branches: [main]

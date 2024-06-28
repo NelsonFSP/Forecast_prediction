@@ -14,6 +14,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Create Pull Request
-        uses: create-pull-request@v6
+        uses: NelsonFSP/create-pull-request@v6
